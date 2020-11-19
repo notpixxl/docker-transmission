@@ -16,10 +16,10 @@
       USER: '{{ __transmission_default_user }}'
       PASS: '{{ __transmission_default_pass }}'
     ports:
-      - "9091:9091"
+      - "'{{ __transmission_default_webinterface_port }}':9091"
       - "51413:51413"
       - "51413:51413/udp"
     volumes:
-      - "~/transmission/config/:/config"
-      - "~/transmission/downloads/:/downloads"
-      - "~/transmission/watch/:/watch"
+      - "'{{ __transmission_default_config_path }}':/config"
+      - "'{{ __transmission_default_download_path }}':/downloads"
+      - "'{{ __transmission_default_watch_path }}':/watch"

@@ -3,3 +3,7 @@
 __transmission_default_user: transmission
 __transmission_default_pass: transmission
 __transmission_default_TZ: Europe/Paris
+__transmission_default_config_path: ~/transmission/config/
+__transmission_default_download_path: ~/transmission/download/
+__transmission_default_watch_path: ~/transmission/watch/
+__transmission_default_webinterface_port: 9091
