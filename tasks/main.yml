@@ -5,7 +5,6 @@
     name:  transmission
     image: ghcr.io/linuxserver/transmission
     state: started
-    recreate: yes
     restart_policy: unless-stopped
     container_default_behavior: no_defaults
     output_logs: yes
