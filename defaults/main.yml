@@ -1,0 +1,5 @@
+---
+# defaults file for docker-transmission
+__transmission_default_user: transmission
+__transmission_default_pass: transmission
+__transmission_default_TZ: Europe/Paris

@@ -1,0 +1,25 @@
+---
+# tasks file for docker-transmission
+- name: Set transmission container up and running
+      community.general.docker_container:
+        name:  transmission
+        image: ghcr.io/linuxserver/transmission
+        state: started
+        restart_policy: unless-stopped
+        container_default_behavior: no_defaults
+        output_logs: yes
+        env:
+          PUID: '1000'
+          PGID: '1000'
+          TZ: '{{ __transmission_default_TZ }}' 
+          TRANSMISSION_WEB_HOME: '/combustion-release/'
+          USER: '{{ __transmission_default_user }}'
+          PASS: '{{ __transmission_default_pass }}'
+        ports:
+          - "9091:9091"
+          - "51413:51413"
+          - "51413:51413/udp"
+        volumes:
+          - "~/transmission/config/:/config"
+          - "~/transmission/downloads/:/downloads"
+          - "~/transmission/watch/:/watch"
