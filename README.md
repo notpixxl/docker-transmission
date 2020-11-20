@@ -1,7 +1,7 @@
 Docker-Transmission
 =========
 
-Ansible role to install linuxserver/transmission docker container 
+Ansible role to install linuxserver/transmission docker container
 
 Requirements
 ------------
@@ -30,11 +30,13 @@ Dependencies
 None
 
 Example Playbook
-----------------
+----------------`
 
-    - hosts: servers
-      roles:
-         - { role: docker-transmission, __tranmission_default_TZ: Europe/London }
+```yaml
+- hosts: servers
+  roles:
+     - { role: docker-transmission, __tranmission_default_TZ: Europe/London }
+```
 
 License
 -------
