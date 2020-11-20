@@ -35,7 +35,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-     - { role: notpixxl.docker-transmission, __tranmission_default_TZ: Europe/London }
+     - { role: notpixxl.docker_transmission, __tranmission_default_TZ: Europe/London }
 ```
 
 License
