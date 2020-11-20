@@ -12,6 +12,8 @@ Requirements
 Role Variables
 --------------
 
+Ansible variables are listed below with their default values.
+
 ```yaml
 __transmission_default_user: transmission #Best supersed it on vault file
 __transmission_default_pass: transmission #Best supersed it on vault file
@@ -34,7 +36,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: docker-transmission, __tranmission_defaut_TZ: Europe/London }
+         - { role: docker-transmission, __tranmission_default_TZ: Europe/London }
 
 License
 -------
